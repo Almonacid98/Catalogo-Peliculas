@@ -5,6 +5,5 @@ class Directores():
     cantidaddepelicualas = ''
     añosdeexperiencia = ''
 
-    def __init__(self, nombrededirector):
-        self.__nombrededirector = nombrededirector
+
 
