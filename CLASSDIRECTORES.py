@@ -1,5 +1,6 @@
-class Autores():
-    nombredeautor = ''
+
+class Directores():
+    nombrededirector = ''
     pelicularealizada = ''
     edad = ''
     cantidaddepelicualas = ''

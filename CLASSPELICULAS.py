@@ -1,9 +1,9 @@
-from CLASSAUTORES import*
+from CLASSDIRECTORES import *
 class Peliculas():
     nombredepelicula = ''
     tipodepelicula = ''
     restriccionesdeedad = ''
-    quienhizolapelicula = Autores()
+    quienhizolapelicula = Directores()
 
     def __init__(self, nombredepelicula, tipodepelicula, restriccionesdeedad):
         self.__nombredepelicula = nombredepelicula
