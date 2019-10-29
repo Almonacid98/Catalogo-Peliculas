@@ -5,4 +5,3 @@ class Directores():
     edad = ''
     cantidaddepelicualas = ''
     añosdeexperiencia = ''
-
