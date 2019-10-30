@@ -1,16 +1,16 @@
-
 from CLASSDIRECTORES import *
 class Peliculas():
     nombredepelicula = ''
     tipodepelicula = ''
     restriccionesdeedad = ''
+    duracion = ''
     quienhizolapelicula = Directores()
 
-    def __init__(self, nombredepelicula, tipodepelicula, restriccionesdeedad):
+    def __init__(self, nombredepelicula, tipodepelicula, restriccionesdeedad, duracion):
         self.__nombredepelicula = nombredepelicula
         self.__tipodepeliculas = tipodepelicula
         self.__restriccionesdeedad = restriccionesdeedad
-
+        self.__duracion = duracion
 
     def setnombredepelicula(self, nombredepelicula):
         self.__nombredepelicula = nombredepelicula
@@ -24,6 +24,10 @@ class Peliculas():
         self.__restriccionesdeedad = restriccionesdeedad
 
 
+    def setduraciondepelicula(self, duraciondepelicula):
+        self.__duracion = duraciondepelicula
+
+
     def getnombredepelicula(self):
         return self.__nombredepelicula
 
@@ -35,6 +39,9 @@ class Peliculas():
     def getrestriccionesdeedad(self):
         return self.__restriccionesdeedad
 
+
+    def getduraciondepelicula(self):
+        return self.__duracion
 
 
 play = Peliculas("Avengers", "Ciencia ficción", "Apta para mayores de 13 años")
