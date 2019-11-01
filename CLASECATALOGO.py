@@ -1,4 +1,4 @@
-from CLASSDIRECTORES import *
+
 from CLASSPELICULAS import *
 class Catalogo():
     catalogo = []
@@ -26,6 +26,7 @@ class Catalogo():
             choice = input("PRESIONE LAS SIGUIENTES OPCIONES PARA PODER EMPEZAR[1/2/3]  = ")
             if choice == '1':
                 catalogos.verPeliculas()
+                play.menu2()
             elif choice == '2':
                 catalogos.crearPelicula()
             elif choice == '3':

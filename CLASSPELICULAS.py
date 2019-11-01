@@ -42,5 +42,18 @@ class Peliculas():
     def getduraciondepelicula(self):
         return self.__duracion
 
+    def menu2(self):
+        while True:
+            print("1. SINOPSIS = AVENGERS")
+            print("4 = EXIT")
+            choice = input("PARA VER SINOPSIS ELIJA OPCION CORRECTA  = ")
+            if choice == '1':
+               pass
+            elif choice == '4':
+                print(
+                    "GRACIAS POR UTILIZAR NUESTRO SERVICIO.... ESPERAMOS QUE SE HAYA PODIDO INFORMAR... HASTA LA PRÓXIMA!!")
+                break
+            else:
+                print("\n OPCION INCORRECTA.... VUELVA A ELEGIR UNA OPCION EXISTENTE EN EL SISTEMA....")
 
 play = Peliculas("Avengers", "Ciencia ficción", "Apta para mayores de 13 años", "1hs")

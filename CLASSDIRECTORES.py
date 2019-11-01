@@ -42,4 +42,4 @@ class Directores():
     def getexperiencia(self):
         return self.__experiencia
 
-direct = Directores()
+
