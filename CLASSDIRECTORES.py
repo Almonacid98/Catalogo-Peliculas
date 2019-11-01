@@ -1,16 +1,16 @@
 class Directores():
-    nombrededirector = ''
-    pelicularealizada = ''
-    edad = ''
-    cantidaddepelicualas = ''
-    añosdeexperiencia = ''
+    __nombrededirector = ''
+    __pelicularealizada = ''
+    __edad = ''
+    __cantidaddepelicualas = ''
+    __aniosdeexperiencia = ''
 
-    def __init__(self, namedirector, peliculaquerealizo, edad, cantidaddepeliculas, añosdeexperiencia):
+    def __init__(self, namedirector, peliculaquerealizo, edad, cantidaddepeliculas, anioosdeexperiencia):
         self.__nombredirector = namedirector
         self.__peliculaquerealizo = peliculaquerealizo
         self.__edad = edad
         self.__cantidaddepeliculas = cantidaddepeliculas
-        self.__añosdeexperiecias = añosdeexperiencia
+        self.__anioosdeexperiecias = anioosdeexperiencia
 
     def setnombredirector(self, nombre):
         self.__nombredirector = nombre
