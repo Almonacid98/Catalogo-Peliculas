@@ -8,7 +8,8 @@ def menuinicio():
             print("1 = VER CATALOGO DE PELICULAS DISPONIBLES")
             print("2 = VER INFORMACION DE DIRECTORES")
             print("3 = BORRAR PELICULAS")
-            print("4 = EXIT")
+            print("4 = AGREGAR UNA PELICULA A LA LISTA")
+            print("5 = EXIT")
             choice = input("PRESIONE LAS SIGUIENTES OPCIONES PARA PODER EMPEZAR[1/2/3/4]  = ")
             if choice == '1':
                 catalogos.getcatalogo()
@@ -26,8 +27,10 @@ def menuinicio():
             elif choice == '2':
                 pass
             elif choice == '3':
-                catalogos.__popborrarPeliculas()
+                catalogos.popborrarPeliculadelista()
             elif choice == '4':
+                catalogos.agregarPelicula()
+            elif choice == '5':
                 print(
                     "GRACIAS POR UTILIZAR NUESTRO SERVICIO.... ESPERAMOS QUE SE HA1YA PODIDO INFORMAR... HASTA LA PRÓXIMA!!")
                 break
@@ -37,8 +40,8 @@ def menuinicio():
 catalogos = Catalogo()
 pelis = Peliculas("The Avengers: Los Vengadores", "Acción | Aventura | Ciencia ficción", "Apta para mayores de 12", "2h 23m")
 pelis1 = Peliculas("Deadpool", "Acción | Aventura | Comedia", "Apta para mayores de 18", "1h 49m")
-#pelis2 = Peliculas()
+pelis2 = Peliculas("Rápido y furioso", " Acción | Crimen | Suspenso", "Apta para mayores de 15 años", "1h 47m")
 catalogos.getcatalogo().append(pelis)
 catalogos.getcatalogo().append(pelis1)
-        #self.catalogolist.append(pelis2)
+catalogos.getcatalogo().append(pelis2)
 menuinicio()
