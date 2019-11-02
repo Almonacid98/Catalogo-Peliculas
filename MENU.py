@@ -1,6 +1,7 @@
 from CLASECATALOGO import *
 from CLASSPELICULAS import *
 from CLASSDIRECTORES import *
+from CLASSINFORMACIONPELICULAS import *
 def menuinicio():
     while True:
             print(
