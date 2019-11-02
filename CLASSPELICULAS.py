@@ -1,4 +1,3 @@
-from CLASSDIRECTORES import *
 class Peliculas():
     def __init__(self, nombredepelicula, tipodepelicula, restriccionesdeedad, duracion):
         self.__nombredepelicula = nombredepelicula
