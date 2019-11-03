@@ -10,6 +10,8 @@ class Catalogo():
 
 
 
+    def setdirectores(self, directores):
+        self.__Directoreslist = directores
 
 
 
@@ -22,11 +24,9 @@ class Catalogo():
         self.__catalogolist.append(pelicula)
 
 
-    def popborrarPeliculadelista(self):
+    def borrarPeliculadelista(self):
         self.getverPeliculas()
-        borrar = input("INGRESE EL NOMBRE DE LA PELICULA QUE DESEA BORRAR DE LA LISTA = ")
-        print("BORRANDO DATOS.......")
-        self.__catalogolist.pop(borrar)
+        self.__catalogolist.remove(input("Ingrese la pelicula que desea eliminar:"))
 
 
     def getverPeliculas(self):
@@ -35,15 +35,17 @@ class Catalogo():
                   "\n Género:", a.gettipodepelicula(), "\n Restricción:", a.getrestriccionesdeedad(),
                   "\n Duración:", a.getduraciondepelicula())
 
+
     def getverdirectores(self):
-        for a in self.__catalogolist:
-
-            print("\nNombre del director:", a.getnombredepelicula(),
-                  "\n Pelicula que realizó:", a.gettipodepelicula(), "\n Edad:", a.getrestriccionesdeedad(),
-                  "\n Cantidad de peliculas:", a.getduraciondepelicula(), "\n Años de experiencia:")
-
+        for a in self.__Directoreslist:
+            print("\nNombre del director:", a.getnombredirector(),
+                  "\n Pelicula que realizó:", a.getpeliculashechas(), "\n Edad:", a.getedad(),
+                  "\n Cantidad de peliculas:", a.getpeliculascantidad(), "\n Años de experiencia:", a.getexperiencia())
 
 
     def getcatalogo(self):
         return self.__catalogolist
 
+
+    def getdirectores(self):
+        return self.__Directoreslist

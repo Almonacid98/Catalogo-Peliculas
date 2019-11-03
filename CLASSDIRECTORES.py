@@ -1,10 +1,4 @@
 class Directores():
-    __nombrededirector = ''
-    __pelicularealizada = ''
-    __edad = ''
-    __cantidadpelicualas = ''
-    __experiencia = ''
-
     def __init__(self, namedirector, peliculaquerealizo, edad, cantidaddepeliculas, anioosdeexperiencia):
         self.__nombredirector = namedirector
         self.__peliculaquerealizo = peliculaquerealizo
@@ -28,10 +22,10 @@ class Directores():
         self.____anioosdeexperiecias = experiencia
 
     def getnombredirector(self):
-        return self.__nombrededirector
+        return self.__nombredirector
 
     def getpeliculashechas(self):
-        return self.__pelicularealizada
+        return self.__peliculaquerealizo
 
     def getedad(self):
         return self.__edad
@@ -40,6 +34,9 @@ class Directores():
         return self.__cantidaddepeliculas
 
     def getexperiencia(self):
-        return self.__experiencia
+        return self.__anioosdeexperiecias
+
+
+
 
 
