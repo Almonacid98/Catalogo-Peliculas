@@ -44,6 +44,12 @@ catalogos.getcatalogo().append(pelis)
 catalogos.getcatalogo().append(pelis1)
 catalogos.getcatalogo().append(pelis2)
 director = Directores("Anthony Russo y Joe Russo", "Pieces, Welcome to Collinwood, Capitán América: Civil War, Avengers: Endgame",
-                      "Anthony:49 y Joe:48 años", "Contienen aproximadamente 30 peliculas realizadas", "Contienen acerca de mas de 23 años de experiencia como directores")
+                      "Anthony:49 y Joe:48 años", "Contienen aproximadamente 30 peliculas realizadas", "Contienen acerca de mas de 30 años de experiencia como directores")
+director1 = Directores("Tim Miller", "Hideaway(1995) , La chica del dragón tatuado(2011), Thor: The Dark World (2013), Deadpool (2016) ,Terminator: Dark Fate (2019) ","49 años",
+                       "Contiene mas de 7 peliculas realizadas", "Contiene acerca de 25 años de experiencia como director" )
+director2 = Directores("Justin lin y James Wan", "Saga completa de Rapidos y furiosos", "Justin: 46 y james:42", "Contiene aproximadamente 15 peliculas"
+                       , "Contienen más de 15 años de experiencia como directores")
 catalogos.getdirectores().append(director)
+catalogos.getdirectores().append(director1)
+catalogos.getdirectores().append(director2)
 menuinicio()
