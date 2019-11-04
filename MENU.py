@@ -15,16 +15,18 @@ def menuinicio():
             if choice == '1':
                 catalogos.getcatalogo()
                 catalogos.getverPeliculas()
-                menudirectores()
                 menusinopsis()
 
             elif choice == '2':
-                pass
+                catalogos.getdirectores()
+                catalogos.getverdirectores()
 
             elif choice == '3':
                 catalogos.borrarPeliculadelista()
+
             elif choice == '4':
                 catalogos.agregarPelicula()
+
             elif choice == '5':
                 print(
                     "GRACIAS POR UTILIZAR NUESTRO SERVICIO.... ESPERAMOS QUE SE HA1YA PODIDO INFORMAR... HASTA LA PRÓXIMA!!")
@@ -32,14 +34,7 @@ def menuinicio():
             else:
                 print("\n OPCION INCORRECTA.... VUELVA A ELEGIR UNA OPCION EXISTENTE EN EL SISTEMA....")
 
-def menudirectores():
-    choice = input("¿DESEA VER EL CATALOGO DE DIRECTORES? [si/no]")
-    while True:
-        if choice == 'si':
-            catalogos.getdirectores()
-            catalogos.getverdirectores()
-        elif choice == 'no':
-            break
+
 
 catalogos = Catalogo()
 pelis = Peliculas("The Avengers: Los Vengadores", "Acción | Aventura | Ciencia ficción", "Apta para mayores de 12", "2h 23m")
