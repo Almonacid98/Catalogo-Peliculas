@@ -22,7 +22,10 @@ class Catalogo():
         duracion = input("INGRESE EL TIEMPO ESTIMADO DE DURACION DE LA PELICULA A CREAR = ")
         pelicula = Peliculas(nombredepelicula, tipodepelicula, restriccionesdeedad, duracion)
         self.__catalogolist.append(pelicula)
-
+        archivocreado = input("INGRESE EL NOMBRE DEL ARCHIVO PARA CREAR SINOPSIS SEGUIDO DE .txt:")
+        archivocreado = open(archivocreado, 'a')
+        texto = input("INGRESE EL CONTENIDO DE LA SINOPSIS DE LA NUEVLA PELICULA:\n")
+        archivocreado.writelines(texto)
 
     def borrarPeliculadelista(self):
         self.getverPeliculas()
@@ -30,7 +33,7 @@ class Catalogo():
 
 
     def getverPeliculas(self):
-        contador = 0
+        contador = -1
         for a in self.__catalogolist:
             contador = contador + 1
             print("\n", contador)
