@@ -9,6 +9,7 @@ Sistema para la organizacion de las carreras legales.
 
 [<img src="https://avatars.githubusercontent.com/u/105246598?v=4" width=115><br><sub>Verdini Jesus</sub>](https://github.com/pipo508)
 
+| [<img src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Camila Fernanda Alves</sub>](https://github.com/camilafernanda) |  [<img src="https://avatars.githubusercontent.com/u/71970858?v=4" width=115><br><sub>Ellen Pimentel</sub>]([https://github.com/guilhermeonrails](https://github.com/ellenpimentel)) |  [<img src="https://avatars.githubusercontent.com/u/91544872?v=4" width=115><br><sub>Génesys Rondón</sub>](https://github.com/genesysaluralatam) |
 # Modo de ejecución ()
 ---> 1- Crear archivo .env sobre el directorio de Racing-system-SR.
 ---> 2- Ejecutar Script install.sh como ./install.sh para activar el entorno e instalar librerías.
